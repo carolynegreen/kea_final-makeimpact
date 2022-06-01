@@ -5,33 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Make!mpact</title>
+    <link rel="stylesheet" href="mobilenav.css">   
+  <title>Make!mpact</title>
   </head>
 
   <header>
-    <section id="logo">
-    <h1><a href=>m!</a></h1>
-  </section>
     <nav>
+    <div id="logo">
+    <h1><a href="http://makeimpact.io/">m!</a></h1>
+    </div>
+    <div class="nav_links">
       <ul>
-        <li>Learn</li>
-        <li>Engage</li>
-        <li>Invest</li>
-        <li><a href=>Connect</a></li>
-        <li>About</li>
+        <li>Learn &#129417</li>
+        <li>Invest &#128184</li>
+        <li><a href=>Connect &#128279</a></li>
+        <li>About &#128241</li>
+        <div id="button"><a href="https://docs.google.com/presentation/d/1XGAnNt7J62okNxsLkm5UycBVU_R-9NbJ_kBTo2UfVF0/edit?usp=sharing">get the app</a></div>
       </ul>
-    </nav>
-    <button>get the app</button>
-  </header>
+  </div>
 
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <ul>
+              <li>Learn &#129417</li>
+            <li>Invest &#128184</li>
+            <li><a href=>Connect &#128279</a></li>
+            <li>About &#128241</li>
+            <div id="button_mobile">get the app</div>
+            </ul>
+          </div>
+        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="openbtn" onclick="openNav()">+</div>
+
+
+  </nav>
+  </header>
 
   <body>
 
-    <section id="video-container"></section>
+    <section id="video-container">
+      <video autoplay="" muted="" playsinline="" loop="" src="media/makeimpactvideo.mp4"></video>
+    </section>
+
 
 
 <section id="section_one">
   <h2 id="invest_header"2>Invest In Your Community</h2>
+<section id="mockup">
+<div id="image_container">
+  <img src="media/iphone mockup.png" alt="iphone mockup">
+</div>
+<div id="impact_text">
   <ul>
     <li>&#9989 Connect with other impact investors</li>
     <li>&#9989 Share your ideas on sustainable investing</li>
@@ -39,10 +71,24 @@
   </ul>
   <p>
     With Make!mpact, explore a global community of like-minded people through shared articles, videos, and tweets. We offer a platform where you can share your ideas with your community about investing and sustainability.
-  </p>
+  </p></div></section>
+
   <h3>Connect & Engage with Like-Minded People</h3>
   <p>Download the Make!mpact app and begin your investing journey today!</p>
-</section>
+  
+  <div id="text_app_button"><a href="">Text me the app</a></div>
+  
+  <div id="appstores">
+
+<a href="https://docs.google.com/presentation/d/1XGAnNt7J62okNxsLkm5UycBVU_R-9NbJ_kBTo2UfVF0/edit?usp=sharing">
+  <img src="media/appstore.svg" alt="app store">
+</a>
+
+<a href="https://docs.google.com/presentation/d/1XGAnNt7J62okNxsLkm5UycBVU_R-9NbJ_kBTo2UfVF0/edit?usp=sharing">
+<img src="media/googleplay.svg" alt="google play">
+</a>
+
+  </div> </section>
 
   </body>
 
@@ -80,4 +126,7 @@
 </div>
 
 </footer>
+
+<script src="mobile.js"></script>
+
 </html>
